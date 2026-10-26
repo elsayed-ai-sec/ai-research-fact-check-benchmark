@@ -1,0 +1,34 @@
+[
+  {
+    "source_result": {
+      "task_id": "FACT-001",
+      "source_check": "EVIDENCE_MATCH",
+      "http_status": 200,
+      "fact_verification": "NOT_AUTOMATICALLY_VERIFIED",
+      "detail": "Text matching is preliminary evidence only."
+    },
+    "id": "FACT-001",
+    "question": "When was NIST AI Risk Management Framework (AI RMF 1.0) published?",
+    "status": "READY_FOR_EVALUATION",
+    "validation_message": "Task structure is valid.",
+    "source_name": "National Institute of Standards and Technology (NIST)",
+    "source_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10",
+    "expected_answer": "January 26, 2023"
+  },
+  {
+    "source_result": {
+      "task_id": "FACT-002",
+      "source_check": "EVIDENCE_MATCH",
+      "http_status": 200,
+      "fact_verification": "NOT_AUTOMATICALLY_VERIFIED",
+      "detail": "Text matching is preliminary evidence only."
+    },
+    "id": "FACT-002",
+    "question": "What does AI RMF stand for in the NIST framework?",
+    "status": "READY_FOR_EVALUATION",
+    "validation_message": "Task structure is valid.",
+    "source_name": "National Institute of Standards and Technology (NIST)",
+    "source_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "expected_answer": "Artificial Intelligence Risk Management Framework"
+  }
+]

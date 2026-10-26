@@ -1,0 +1,20 @@
+[
+  {
+    "id": "FACT-001",
+    "question": "When was NIST AI Risk Management Framework (AI RMF 1.0) published?",
+    "expected_answer": "January 26, 2023",
+    "source_name": "National Institute of Standards and Technology (NIST)",
+    "source_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10",
+    "category": "factual_accuracy",
+    "verification_status": "verified"
+  },
+  {
+    "id": "FACT-002",
+    "question": "What does AI RMF stand for in the NIST framework?",
+    "expected_answer": "Artificial Intelligence Risk Management Framework",
+    "source_name": "National Institute of Standards and Technology (NIST)",
+    "source_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "category": "factual_accuracy",
+    "verification_status": "verified"
+  }
+]
