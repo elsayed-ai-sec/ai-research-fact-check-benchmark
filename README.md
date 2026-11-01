@@ -1,96 +1,74 @@
-# AI Research & Fact-Checking Benchmark
-
-A Python-based evaluation project that checks structured fact-checking tasks, retrieves source pages, compares expected answers with extracted page text, and generates JSON and Markdown reports.
+# AIREP - AI Research & Evaluation Platform
 
 ## Project Goals
 
-- Validate benchmark task structure and required fields.
-- Check source URL format.
-- Retrieve publicly accessible source pages.
-- Extract visible page text and perform preliminary exact-text matching.
-- Record source-access and evidence-matching outcomes.
-- Generate machine-readable JSON results and human-readable Markdown reports.
-- Run automated tests with pytest.
+AIREP evaluates how language models answer research questions using either internal knowledge or supplied evidence.
 
-## Current Scope
+The platform aims to:
 
-The current benchmark includes two questions about the NIST AI Risk Management Framework (AI RMF 1.0).
+- Build a structured research benchmark.
+- Compare closed-book and evidence-assisted answers.
+- Evaluate factual accuracy, source quality, evidence support, and reasoning.
+- Support human review and failure analysis.
+- Generate JSON and Markdown reports.
+- Distinguish source accessibility from factual verification.
 
-The source checker reports:
-- `EVIDENCE_MATCH`: the normalized expected answer appears in extracted page text.
-- `EVIDENCE_NOT_FOUND`: the expected text was not found.
-- `SOURCE_ACCESS_BLOCKED`: the server rejected the request.
-- `SOURCE_ERROR`: a network or retrieval error occurred.
+## Current Implementation
 
-These are preliminary source-checking results. Exact-text matching does **not** prove that a claim is true, that the source context supports it, or that the source is authoritative. Fact verification is not yet automated.
+The current benchmark contains 11 draft questions across five categories:
 
-## Requirements
+| Category | Questions |
+|---|---:|
+| Fact verification | 5 |
+| Source reliability | 2 |
+| Multi-hop research | 2 |
+| Temporal accuracy | 1 |
+| Answer grounding | 1 |
+| **Total** | **11** |
 
-- Python 3.13 or compatible Python 3
-- pytest 9.x for running tests
-- Internet access for live source checks
+The long-term target is 100 questions. The current benchmark is not yet complete.
 
-The source checker currently uses Python's standard library; no third-party HTTP library is required.
+## Evaluation Methodology
 
-## Project Structure
+AIREP uses four evaluation dimensions:
 
-```text
-.
-├── README.md
-├── run_benchmark.py
-├── verify_sources.py
-├── tasks/
-│   ├── benchmark_tasks.json
-│   └── sources/
-├── tests/
-│   ├── test_benchmark.py
-│   └── test_verify_sources.py
-├── results/
-├── reports/
-└── docs/
-```
+| Dimension | Weight |
+|---|---:|
+| Accuracy | 40% |
+| Source quality | 20% |
+| Evidence support | 25% |
+| Reasoning | 15% |
+| **Total** | **100%** |
 
-## Run the Benchmark
+The platform compares two answer modes:
 
-```bash
-python3 -m py_compile run_benchmark.py verify_sources.py
-python3 -m pytest -v
-python3 run_benchmark.py
-```
+1. **Closed-book:** The model answers without supplied evidence.
+2. **Evidence-assisted:** The model answers using supplied research evidence.
 
-Run source checks directly:
+Evaluation results can be reviewed by a human evaluator. Automated checks and source accessibility checks do not independently prove that an answer is factually correct.
 
-```bash
-python3 verify_sources.py
-```
+## Project Limitations
 
-The benchmark writes timestamped JSON results under `results/` and Markdown reports under `reports/`.
+- The benchmark currently contains only 11 draft questions.
+- Results from a small number of questions or models are preliminary.
+- Human review is important when judging answer quality and evidence support.
+- An accessible source URL does not necessarily support the answer.
+- AIREP is a research and evaluation platform, not an automated fact-checking authority.
 
-## Test Coverage
+## Installation
 
-Current tests cover:
-- Task loading and structural validation
-- Missing required fields
-- Invalid source URL formats
-- Unknown verification states
-- Text normalization
-- Extraction of visible page text
-- Preliminary text matching behavior
+1. Clone the repository using: git clone git@github.com:elsayed-ai-sec/ai-research-fact-check-benchmark.git
+2. Enter the project directory: cd ai-research-fact-check-benchmark
+3. Create a virtual environment: python3 -m venv venv
+4. Activate it: source venv/bin/activate
+5. Install dependencies: pip install -r requirements.txt
 
-## Limitations and Next Steps
+## Run Tests
 
-- Exact-text matching can miss paraphrases and may match text without sufficient context.
-- A successful HTTP response does not establish factual correctness.
-- Live source access can vary because of server policies, network failures, or timeouts.
-- The benchmark currently contains only two tasks.
+Run the automated test suite:
 
-Planned improvements:
-1. Add more verified benchmark cases from authoritative sources.
-2. Record evidence snippets and page metadata.
-3. Add offline tests for source retrieval outcomes.
-4. Improve claim-to-evidence comparison beyond exact-text matching.
-5. Keep source accessibility, evidence matching, and factual verification as separate outcomes.
+    python -m pytest -v
 
-## Responsible Evaluation
+Validate the benchmark structure:
 
-This project is intended for educational and quality-assurance use. Reports should clearly distinguish observed evidence from conclusions and should not label claims as verified without adequate supporting evidence.
+    python tests/validate_benchmark.py

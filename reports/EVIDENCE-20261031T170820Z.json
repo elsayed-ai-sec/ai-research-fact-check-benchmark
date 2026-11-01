@@ -1,0 +1,52 @@
+{
+  "evaluation_id": "EVIDENCE-20261031T170820Z",
+  "benchmark_question_id": "AIREP-011",
+  "evaluation_mode": "evidence_assisted",
+  "model": "qwen2.5:1.5b",
+  "question": "Using both NIST publication pages, identify the report numbers of the original AI Risk Management Framework 1.0 and its Generative AI Profile. Explain how the two reports are related and specify the technology addressed by the profile.",
+  "expected_answer": "The original AI Risk Management Framework 1.0 is NIST AI 100-1. Its Generative AI Profile is NIST AI 600-1, a companion resource and cross-sectoral profile that addresses Generative Artificial Intelligence (GAI).",
+  "provided_evidence": [
+    {
+      "source_title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10",
+      "supporting_text": "The NIST publication page identifies the original AI Risk Management Framework 1.0 as report NIST AI 100-1.",
+      "source_type": "primary"
+    },
+    {
+      "source_title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+      "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+      "supporting_text": "The NIST publication page identifies the Generative AI Profile as NIST AI 600-1 and describes it as a companion resource and cross-sectoral profile of AI RMF 1.0 for Generative AI.",
+      "source_type": "primary"
+    }
+  ],
+  "model_answer": "Answer: The original AI Risk Management Framework 1.0 is identified as report NIST AI 100-1, and the Generative AI Profile is identified as NIST AI 600-1. These reports are related as companion resources and cross-sectoral profiles of the AI Risk Management Framework 1.0 for Generative AI.\n\nLimitations: The evidence provided does not specify the technology addressed by the Generative AI Profile.",
+  "automated_score": null,
+  "review_status": "reviewed",
+  "created_at": "2026-10-31T17:08:20.427574+00:00",
+  "human_review": {
+    "accuracy": {
+      "score": 35,
+      "max_score": 40,
+      "notes": "Both report numbers are correct. The relationship is partially explained, but the technology is not explicitly identified."
+    },
+    "source_quality": {
+      "score": 20,
+      "max_score": 20,
+      "notes": "Both supplied sources are official NIST publication pages."
+    },
+    "evidence_support": {
+      "score": 20,
+      "max_score": 25,
+      "notes": "The main claims are supported by the supplied evidence, but the answer does not cite the source titles."
+    },
+    "reasoning": {
+      "score": 11,
+      "max_score": 15,
+      "notes": "The model identifies the relationship but fails to explicitly extract Generative AI as the technology."
+    },
+    "total_score": 86,
+    "max_score": 100,
+    "reviewer": "human",
+    "review_status": "reviewed"
+  }
+}

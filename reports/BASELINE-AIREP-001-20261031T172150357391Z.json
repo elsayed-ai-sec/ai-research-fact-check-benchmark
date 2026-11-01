@@ -1,0 +1,22 @@
+{
+  "evaluation_id": "BASELINE-AIREP-001-20261031T172150357391Z",
+  "benchmark_question_id": "AIREP-001",
+  "evaluation_mode": "closed_book_baseline",
+  "model": "qwen2.5:1.5b",
+  "question": "What are the four core functions of the NIST AI Risk Management Framework (AI RMF 1.0)?",
+  "expected_answer": "Govern, Map, Measure, and Manage.",
+  "model_answer": "The NIST AI Risk Management Framework (AI RMF 1.0) outlines four core functions:\n\n1. **Risk Identification**: Identifying potential risks associated with AI systems, including both internal and external threats.\n2. **Risk Assessment**: Evaluating the likelihood and impact of identified risks to determine their severity.\n3. **Risk Treatment**: Developing strategies to mitigate identified risks, including both technical and organizational measures.\n4. **Risk Communication**: Ensuring that risk management activities are transparent and that stakeholders are informed about the risks and their management efforts.",
+  "automated_score": null,
+  "review_status": "reviewed",
+  "created_at": "2026-10-31T17:21:50.357436+00:00",
+  "human_review": {
+    "accuracy": 0,
+    "reasoning": 0,
+    "source_quality": null,
+    "evidence_support": null,
+    "applicable_score": 0,
+    "applicable_max_score": 55,
+    "reviewer_notes": "The response incorrectly identifies all four core functions of NIST AI RMF 1.0.",
+    "reviewed_at": "2026-10-31T17:31:12.944382+00:00"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "evaluation_id": "EVIDENCE-AIREP-003-20261031T172015046433Z",
+  "benchmark_question_id": "AIREP-003",
+  "evaluation_mode": "evidence_assisted",
+  "model": "qwen2.5:1.5b",
+  "question": "Identify the report number of the NIST Generative AI Profile and the AI risk management framework it complements.",
+  "expected_answer": "The report number is NIST AI 600-1, and it complements the NIST AI Risk Management Framework 1.0.",
+  "model_answer": "Answer: The report number of the NIST Generative AI Profile is NIST AI 600-1, and it complements the AI Risk Management Framework (AI RMF) version 1.0.\n\nEvidence used:\n1. The title of the evidence: \"NIST Generative Artificial Intelligence Profile\"\n2. The URL provided: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence\n3. The supporting text: \"NIST identifies the publication as NIST AI 600-1 and describes it as a companion resource to AI RMF 1.0.\"\n\nLimitations:\n- The evidence does not provide the specific version of the AI RMF that the NIST Generative AI Profile complements.",
+  "automated_score": null,
+  "review_status": "pending_human_review",
+  "created_at": "2026-10-31T17:20:15.046470+00:00",
+  "provided_evidence": [
+    {
+      "source_title": "NIST Generative Artificial Intelligence Profile",
+      "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+      "supporting_text": "NIST identifies the publication as NIST AI 600-1 and describes it as a companion resource to AI RMF 1.0.",
+      "source_type": "primary"
+    }
+  ]
+}

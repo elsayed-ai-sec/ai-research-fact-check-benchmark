@@ -1,0 +1,30 @@
+{
+  "evaluation_id": "EVIDENCE-AIREP-001-20261031T185502499802Z",
+  "benchmark_question_id": "AIREP-001",
+  "evaluation_mode": "evidence_assisted",
+  "model": "qwen2.5:1.5b",
+  "question": "What are the four core functions of the NIST AI Risk Management Framework (AI RMF 1.0)?",
+  "expected_answer": "Govern, Map, Measure, and Manage.",
+  "model_answer": "The four core functions of the NIST AI Risk Management Framework (AI RMF 1.0) are:\n\n1. Govern: This function involves establishing policies, procedures, and guidelines to ensure that AI systems are developed, deployed, and maintained in a secure and compliant manner.\n2. Map: This function involves identifying and documenting the risks associated with AI systems, including potential vulnerabilities and threats.\n3. Measure: This function involves assessing the risks and vulnerabilities identified in the mapping process to determine their likelihood and impact.\n4. Manage: This function involves implementing and monitoring the measures taken to mitigate identified risks and vulnerabilities, ensuring that the AI systems are secure and compliant.\n\nLimitations:\nThe evidence provided does not specify the exact details of each core function, such as the specific policies, procedures, or guidelines that are established, the methods used to identify and document risks, the criteria for assessing risks and vulnerabilities, or the measures taken to mitigate identified risks and vulnerabilities.",
+  "automated_score": null,
+  "review_status": "reviewed",
+  "created_at": "2026-10-31T18:55:02.499845+00:00",
+  "provided_evidence": [
+    {
+      "source_title": "NIST AI RMF Core",
+      "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/",
+      "supporting_text": "NIST identifies four core functions: Govern, Map, Measure, and Manage.",
+      "source_type": "primary"
+    }
+  ],
+  "human_review": {
+    "accuracy": 40,
+    "reasoning": 12,
+    "source_quality": 20,
+    "evidence_support": 20,
+    "applicable_score": 92,
+    "applicable_max_score": 100,
+    "reviewer_notes": "The answer correctly identifies all four NIST AI RMF functions. The supplied official NIST source supports the function names. However, some additional explanations are not fully established by the provided evidence and require further verification.",
+    "reviewed_at": "2026-10-31T19:09:34.569435+00:00"
+  }
+}

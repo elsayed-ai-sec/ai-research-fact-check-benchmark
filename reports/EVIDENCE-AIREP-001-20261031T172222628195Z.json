@@ -1,0 +1,30 @@
+{
+  "evaluation_id": "EVIDENCE-AIREP-001-20261031T172222628195Z",
+  "benchmark_question_id": "AIREP-001",
+  "evaluation_mode": "evidence_assisted",
+  "model": "qwen2.5:1.5b",
+  "question": "What are the four core functions of the NIST AI Risk Management Framework (AI RMF 1.0)?",
+  "expected_answer": "Govern, Map, Measure, and Manage.",
+  "model_answer": "The four core functions of the NIST AI Risk Management Framework (AI RMF 1.0) are:\n\n- Govern: This function involves establishing policies, procedures, and guidelines to ensure the AI system is developed, deployed, and maintained in a secure and compliant manner.\n- Map: This function involves identifying and documenting the risks associated with the AI system, including potential threats and vulnerabilities.\n- Measure: This function involves assessing the risks and vulnerabilities identified in the Map function to determine their likelihood and impact.\n- Manage: This function involves implementing controls and mitigations to address the risks identified in the Map function and to ensure the AI system is operating securely and effectively.\n\nLimitations:\nThe evidence provided does not specify the exact details of each function or the specific tools or methods used in each function.",
+  "automated_score": null,
+  "review_status": "reviewed",
+  "created_at": "2026-10-31T17:22:22.628261+00:00",
+  "provided_evidence": [
+    {
+      "source_title": "NIST AI RMF Core",
+      "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/",
+      "supporting_text": "NIST identifies four core functions: Govern, Map, Measure, and Manage.",
+      "source_type": "primary"
+    }
+  ],
+  "human_review": {
+    "accuracy": 35,
+    "reasoning": 10,
+    "source_quality": 20,
+    "evidence_support": 20,
+    "applicable_score": 85,
+    "applicable_max_score": 100,
+    "reviewer_notes": "The response correctly identifies all four NIST AI RMF core functions. However, some descriptions contain details that are not fully supported by the provided evidence. The response also acknowledges limitations in the supplied evidence.",
+    "reviewed_at": "2026-10-31T17:32:17.700407+00:00"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "evaluation_id": "BASELINE-20261031T165836Z",
+  "benchmark_question_id": "AIREP-011",
+  "evaluation_mode": "closed_book_baseline",
+  "model": "qwen2.5:1.5b",
+  "question": "Using both NIST publication pages, identify the report numbers of the original AI Risk Management Framework 1.0 and its Generative AI Profile. Explain how the two reports are related and specify the technology addressed by the profile.",
+  "expected_answer": "The original AI Risk Management Framework 1.0 is NIST AI 100-1. Its Generative AI Profile is NIST AI 600-1, a companion resource and cross-sectoral profile that addresses Generative Artificial Intelligence (GAI).",
+  "model_answer": "The original AI Risk Management Framework 1.0 was published by the National Institute of Standards and Technology (NIST) in 2019. The report number for this framework is NISTIR 8238.\n\nThe Generative AI Profile, which is a subset of the AI Risk Management Framework, was published by NIST in 2023. The report number for this profile is NISTIR 8877.\n\nThe two reports are related in that the Generative AI Profile is a specific implementation of the AI Risk Management Framework. It provides a detailed guide on how to manage the risks associated with generative AI technologies, which are a subset of AI technologies. The profile addresses the technology of generative AI, which is a type of AI that generates new content, such as images, text, or music, based on the input it receives.",
+  "automated_score": null,
+  "review_status": "pending_human_review",
+  "created_at": "2026-10-31T16:58:36.050851+00:00",
+  "human_review": {
+    "reviewer_type": "manual",
+    "accuracy": {
+      "score": 10,
+      "max_score": 40,
+      "notes": "Correctly identified Generative AI, but both report numbers were incorrect."
+    },
+    "source_quality": {
+      "score": null,
+      "max_score": 20,
+      "notes": "Not assessed in closed-book evaluation."
+    },
+    "evidence_support": {
+      "score": null,
+      "max_score": 25,
+      "notes": "Not assessed because no sources were provided to the model."
+    },
+    "reasoning": {
+      "score": 4,
+      "max_score": 15,
+      "notes": "Attempted to explain the relationship, but described it inaccurately."
+    },
+    "applicable_score": 14,
+    "applicable_max_score": 55,
+    "review_status": "reviewed"
+  }
+}

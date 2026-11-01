@@ -1,0 +1,22 @@
+{
+  "evaluation_id": "BASELINE-AIREP-002-20261031T172241800711Z",
+  "benchmark_question_id": "AIREP-002",
+  "evaluation_mode": "closed_book_baseline",
+  "model": "qwen2.5:1.5b",
+  "question": "Is the NIST AI RMF Core webpage an appropriate primary source for identifying the four functions of the NIST AI RMF? Explain why.",
+  "expected_answer": "Yes. It is an official NIST resource describing the AI RMF Core and its four functions.",
+  "model_answer": "Yes, the NIST AI RMF Core webpage is an appropriate primary source for identifying the four functions of the NIST AI RMF. The webpage likely provides detailed information and definitions of the four functions: Assurance, Trust, Security, and Privacy. These functions are fundamental to the Risk Management Framework (RMF) and are commonly discussed in the context of NIST's guidelines. The webpage is likely based on official NIST documents and is therefore considered a reliable source for understanding the core functions of the RMF.",
+  "automated_score": null,
+  "review_status": "reviewed",
+  "created_at": "2026-10-31T17:22:41.800749+00:00",
+  "human_review": {
+    "accuracy": 0,
+    "reasoning": 0,
+    "source_quality": null,
+    "evidence_support": null,
+    "applicable_score": 0,
+    "applicable_max_score": 55,
+    "reviewer_notes": "The response provides incorrect function names and makes unsupported claims about the NIST AI RMF Core webpage.",
+    "reviewed_at": "2026-10-31T17:34:10.016340+00:00"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "evaluation_id": "EVIDENCE-AIREP-003-20261031T172357922283Z",
+  "benchmark_question_id": "AIREP-003",
+  "evaluation_mode": "evidence_assisted",
+  "model": "qwen2.5:1.5b",
+  "question": "Identify the report number of the NIST Generative AI Profile and the AI risk management framework it complements.",
+  "expected_answer": "The report number is NIST AI 600-1, and it complements the NIST AI Risk Management Framework 1.0.",
+  "model_answer": "Answer: The report number of the NIST Generative AI Profile is NIST AI 600-1, and it complements the AI Risk Management Framework (AI RMF) version 1.0.\n\nEvidence used:\n1. The title of the evidence: \"NIST Generative Artificial Intelligence Profile\"\n2. The URL provided: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence\n3. The supporting text: \"NIST identifies the publication as NIST AI 600-1 and describes it as a companion resource to AI RMF 1.0.\"\n\nLimitations:\n- The evidence does not provide the exact version number of the AI RMF that the NIST Generative AI Profile complements. It only mentions that it is a companion resource to AI RMF 1.0.",
+  "automated_score": null,
+  "review_status": "reviewed",
+  "created_at": "2026-10-31T17:23:57.922338+00:00",
+  "provided_evidence": [
+    {
+      "source_title": "NIST Generative Artificial Intelligence Profile",
+      "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+      "supporting_text": "NIST identifies the publication as NIST AI 600-1 and describes it as a companion resource to AI RMF 1.0.",
+      "source_type": "primary"
+    }
+  ],
+  "human_review": {
+    "accuracy": 35,
+    "reasoning": 10,
+    "source_quality": 10,
+    "evidence_support": 20,
+    "applicable_score": 75,
+    "applicable_max_score": 100,
+    "reviewer_notes": "The response correctly identifies NIST AI 600-1 and its relationship to AI RMF 1.0. However, it incorrectly claims that the evidence does not specify the framework version, even though the supplied supporting text explicitly states AI RMF 1.0.",
+    "reviewed_at": "2026-10-31T17:42:07.474372+00:00"
+  }
+}

@@ -1,0 +1,261 @@
+[
+  {
+    "id": "AIREP-001",
+    "category": "fact_verification",
+    "difficulty": "easy",
+    "question": "What are the four core functions of the NIST AI Risk Management Framework (AI RMF 1.0)?",
+    "expected_answer": "Govern, Map, Measure, and Manage.",
+    "evidence": [
+      {
+        "source_title": "NIST AI RMF Core",
+        "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/",
+        "supporting_text": "NIST identifies four core functions: Govern, Map, Measure, and Manage.",
+        "source_type": "primary"
+      }
+    ],
+    "evaluation_criteria": {
+      "accuracy": 40,
+      "source_quality": 20,
+      "evidence_support": 25,
+      "reasoning": 15
+    },
+    "created_at": "2026-10-31",
+    "status": "draft"
+  },
+  {
+    "id": "AIREP-002",
+    "category": "source_reliability",
+    "difficulty": "easy",
+    "question": "Is the NIST AI RMF Core webpage an appropriate primary source for identifying the four functions of the NIST AI RMF? Explain why.",
+    "expected_answer": "Yes. It is an official NIST resource describing the AI RMF Core and its four functions.",
+    "evidence": [
+      {
+        "source_title": "NIST AI RMF Core",
+        "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/",
+        "supporting_text": "The page presents an excerpt from the NIST AI Risk Management Framework 1.0 and describes its core functions.",
+        "source_type": "primary"
+      }
+    ],
+    "evaluation_criteria": {
+      "accuracy": 40,
+      "source_quality": 20,
+      "evidence_support": 25,
+      "reasoning": 15
+    },
+    "created_at": "2026-10-31",
+    "status": "draft"
+  },
+  {
+    "id": "AIREP-003",
+    "category": "multi_hop_research",
+    "difficulty": "medium",
+    "question": "Identify the report number of the NIST Generative AI Profile and the AI risk management framework it complements.",
+    "expected_answer": "The report number is NIST AI 600-1, and it complements the NIST AI Risk Management Framework 1.0.",
+    "evidence": [
+      {
+        "source_title": "NIST Generative Artificial Intelligence Profile",
+        "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+        "supporting_text": "NIST identifies the publication as NIST AI 600-1 and describes it as a companion resource to AI RMF 1.0.",
+        "source_type": "primary"
+      }
+    ],
+    "evaluation_criteria": {
+      "accuracy": 40,
+      "source_quality": 20,
+      "evidence_support": 25,
+      "reasoning": 15
+    },
+    "created_at": "2026-10-31",
+    "status": "draft"
+  },
+  {
+    "id": "AIREP-004",
+    "category": "temporal_accuracy",
+    "difficulty": "easy",
+    "question": "On what date did NIST publish its Generative Artificial Intelligence Profile, report NIST AI 600-1?",
+    "expected_answer": "July 26, 2024.",
+    "evidence": [
+      {
+        "source_title": "NIST Generative Artificial Intelligence Profile",
+        "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+        "supporting_text": "The NIST publication page lists July 26, 2024 as the publication date.",
+        "source_type": "primary"
+      }
+    ],
+    "evaluation_criteria": {
+      "accuracy": 40,
+      "source_quality": 20,
+      "evidence_support": 25,
+      "reasoning": 15
+    },
+    "created_at": "2026-10-31",
+    "status": "draft"
+  },
+  {
+    "id": "AIREP-005",
+    "category": "fact_verification",
+    "difficulty": "easy",
+    "question": "What is the name of the first risk category in the OWASP Top 10 for LLM Applications 2025?",
+    "expected_answer": "LLM01:2025 Prompt Injection.",
+    "evidence": [
+      {
+        "source_title": "OWASP Top 10 for LLM Applications 2025",
+        "url": "https://genai.owasp.org/llm-top-10/",
+        "supporting_text": "The 2025 edition identifies LLM01:2025 as Prompt Injection.",
+        "source_type": "primary"
+      }
+    ],
+    "evaluation_criteria": {
+      "accuracy": 40,
+      "source_quality": 20,
+      "evidence_support": 25,
+      "reasoning": 15
+    },
+    "created_at": "2026-10-31",
+    "status": "draft"
+  },
+  {
+    "id": "AIREP-006",
+    "category": "fact_verification",
+    "difficulty": "medium",
+    "question": "According to the OWASP Top 10 for LLM Applications 2025, what is LLM02 called, and what kinds of information can be exposed?",
+    "expected_answer": "LLM02:2025 is Sensitive Information Disclosure. Exposed information can include personally identifiable information, financial details, health records, confidential business data, security credentials, and legal documents.",
+    "evidence": [
+      {
+        "source_title": "OWASP Top 10 for LLM Applications 2025 - LLM02",
+        "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-v2025.pdf",
+        "supporting_text": "The OWASP 2025 document describes sensitive information disclosure and lists examples including PII, financial details, health records, business data, credentials, and legal documents.",
+        "source_type": "primary"
+      }
+    ],
+    "evaluation_criteria": {
+      "accuracy": 40,
+      "source_quality": 20,
+      "evidence_support": 25,
+      "reasoning": 15
+    },
+    "created_at": "2026-10-31",
+    "status": "draft"
+  },
+  {
+    "id": "AIREP-007",
+    "category": "fact_verification",
+    "difficulty": "medium",
+    "question": "What does the OWASP Top 10 for LLM Applications 2025 identify as LLM03?",
+    "expected_answer": "LLM03:2025 Supply Chain.",
+    "evidence": [
+      {
+        "source_title": "OWASP Top 10 for LLM Applications 2025",
+        "url": "https://genai.owasp.org/llm-top-10/",
+        "supporting_text": "The OWASP 2025 risk list identifies LLM03 as Supply Chain.",
+        "source_type": "primary"
+      }
+    ],
+    "evaluation_criteria": {
+      "accuracy": 40,
+      "source_quality": 20,
+      "evidence_support": 25,
+      "reasoning": 15
+    },
+    "created_at": "2026-10-31",
+    "status": "draft"
+  },
+  {
+    "id": "AIREP-008",
+    "category": "fact_verification",
+    "difficulty": "medium",
+    "question": "What is Data and Model Poisoning in the OWASP Top 10 for LLM Applications 2025, and which risk category number represents it?",
+    "expected_answer": "It is LLM04:2025. It involves manipulating pre-training, fine-tuning, or embedding data in ways that can introduce vulnerabilities, biases, or backdoors.",
+    "evidence": [
+      {
+        "source_title": "OWASP Top 10 for LLM Applications 2025",
+        "url": "https://genai.owasp.org/llm-top-10/",
+        "supporting_text": "OWASP identifies LLM04:2025 as Data and Model Poisoning and describes manipulation of training, fine-tuning, or embedding data.",
+        "source_type": "primary"
+      }
+    ],
+    "evaluation_criteria": {
+      "accuracy": 40,
+      "source_quality": 20,
+      "evidence_support": 25,
+      "reasoning": 15
+    },
+    "created_at": "2026-10-31",
+    "status": "draft"
+  },
+  {
+    "id": "AIREP-009",
+    "category": "answer_grounding",
+    "difficulty": "medium",
+    "question": "According to OWASP 2025, why is validating and sanitizing LLM outputs important before passing them to downstream components?",
+    "expected_answer": "Because insufficient validation and sanitization can allow unsafe model outputs to cause downstream security problems. OWASP identifies this risk as LLM05:2025 Improper Output Handling.",
+    "evidence": [
+      {
+        "source_title": "OWASP Top 10 for LLM Applications 2025",
+        "url": "https://genai.owasp.org/llm-top-10/",
+        "supporting_text": "OWASP describes Improper Output Handling as insufficient validation, sanitization, and handling of LLM outputs.",
+        "source_type": "primary"
+      }
+    ],
+    "evaluation_criteria": {
+      "accuracy": 40,
+      "source_quality": 20,
+      "evidence_support": 25,
+      "reasoning": 15
+    },
+    "created_at": "2026-10-31",
+    "status": "draft"
+  },
+  {
+    "id": "AIREP-010",
+    "category": "source_reliability",
+    "difficulty": "medium",
+    "question": "What kind of knowledge base is MITRE ATLAS, and what types of evidence inform it?",
+    "expected_answer": "MITRE ATLAS is a publicly accessible knowledge base of adversary tactics and techniques involving AI. It is informed by empirical evidence from real-world attacks and realistic demonstrations by AI red teams and security groups.",
+    "evidence": [
+      {
+        "source_title": "MITRE ATLAS",
+        "url": "https://atlas.mitre.org/",
+        "supporting_text": "MITRE describes ATLAS as a living knowledge base based on empirical evidence from real-world attacks and realistic demonstrations from AI red teams and security groups.",
+        "source_type": "primary"
+      }
+    ],
+    "evaluation_criteria": {
+      "accuracy": 40,
+      "source_quality": 20,
+      "evidence_support": 25,
+      "reasoning": 15
+    },
+    "created_at": "2026-10-31",
+    "status": "draft"
+  },
+  {
+    "id": "AIREP-011",
+    "category": "multi_hop_research",
+    "difficulty": "medium",
+    "question": "Using both NIST publication pages, identify the report numbers of the original AI Risk Management Framework 1.0 and its Generative AI Profile. Explain how the two reports are related and specify the technology addressed by the profile.",
+    "expected_answer": "The original AI Risk Management Framework 1.0 is NIST AI 100-1. Its Generative AI Profile is NIST AI 600-1, a companion resource and cross-sectoral profile that addresses Generative Artificial Intelligence (GAI).",
+    "evidence": [
+      {
+        "source_title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+        "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10",
+        "supporting_text": "The NIST publication page identifies the original AI Risk Management Framework 1.0 as report NIST AI 100-1.",
+        "source_type": "primary"
+      },
+      {
+        "source_title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+        "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+        "supporting_text": "The NIST publication page identifies the Generative AI Profile as NIST AI 600-1 and describes it as a companion resource and cross-sectoral profile of AI RMF 1.0 for Generative AI.",
+        "source_type": "primary"
+      }
+    ],
+    "evaluation_criteria": {
+      "accuracy": 40,
+      "source_quality": 20,
+      "evidence_support": 25,
+      "reasoning": 15
+    },
+    "created_at": "2026-10-31",
+    "status": "draft"
+  }
+]

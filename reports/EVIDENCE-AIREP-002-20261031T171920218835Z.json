@@ -1,0 +1,20 @@
+{
+  "evaluation_id": "EVIDENCE-AIREP-002-20261031T171920218835Z",
+  "benchmark_question_id": "AIREP-002",
+  "evaluation_mode": "evidence_assisted",
+  "model": "qwen2.5:1.5b",
+  "question": "Is the NIST AI RMF Core webpage an appropriate primary source for identifying the four functions of the NIST AI RMF? Explain why.",
+  "expected_answer": "Yes. It is an official NIST resource describing the AI RMF Core and its four functions.",
+  "model_answer": "Answer: Yes, the NIST AI RMF Core webpage is an appropriate primary source for identifying the four functions of the NIST AI RMF.\n\nEvidence used: The evidence provided is a URL to the NIST AI RMF Core webpage, which states that the page presents an excerpt from the NIST AI Risk Management Framework 1.0 and describes its core functions.\n\nLimitations: The evidence does not provide specific details about the four functions of the NIST AI RMF, only that it presents an excerpt from the framework. However, the title \"NIST AI RMF Core\" suggests that the webpage is focused on the core functions of the framework, which is a reasonable assumption given the title.",
+  "automated_score": null,
+  "review_status": "pending_human_review",
+  "created_at": "2026-10-31T17:19:20.218874+00:00",
+  "provided_evidence": [
+    {
+      "source_title": "NIST AI RMF Core",
+      "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/",
+      "supporting_text": "The page presents an excerpt from the NIST AI Risk Management Framework 1.0 and describes its core functions.",
+      "source_type": "primary"
+    }
+  ]
+}

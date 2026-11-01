@@ -1,0 +1,38 @@
+{
+  "benchmark_name": "AIREP-100",
+  "version": "1.0",
+  "description": "Evidence-based AI research and evaluation benchmark",
+  "total_questions": 100,
+  "categories": {
+    "fact_verification": 20,
+    "source_reliability": 15,
+    "multi_hop_research": 20,
+    "conflicting_information": 15,
+    "temporal_accuracy": 10,
+    "answer_grounding": 10,
+    "insufficient_evidence": 10
+  },
+  "question_schema": {
+    "id": "AIREP-001",
+    "category": "fact_verification",
+    "difficulty": "easy",
+    "question": "Question text",
+    "expected_answer": "Verified reference answer",
+    "evidence": [
+      {
+        "source_title": "Official source title",
+        "url": "https://example.com",
+        "supporting_text": "Evidence supporting the answer",
+        "source_type": "primary"
+      }
+    ],
+    "evaluation_criteria": {
+      "accuracy": 0,
+      "source_quality": 0,
+      "evidence_support": 0,
+      "reasoning": 0
+    },
+    "created_at": "YYYY-MM-DD",
+    "status": "draft"
+  }
+}

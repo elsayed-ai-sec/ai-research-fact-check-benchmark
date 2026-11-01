@@ -1,0 +1,40 @@
+{
+  "benchmark_question_id": "AIREP-011",
+  "model": "qwen2.5:1.5b",
+  "analysis_type": "human_review_based",
+  "failures": [
+    {
+      "evaluation_mode": "closed_book_baseline",
+      "failure_types": [
+        "factual_error",
+        "incomplete_answer",
+        "reasoning_error"
+      ],
+      "observations": [
+        "Both report numbers were incorrect.",
+        "The relationship between the reports was inaccurately described."
+      ]
+    },
+    {
+      "evaluation_mode": "evidence_assisted",
+      "failure_types": [
+        "incomplete_answer",
+        "false_abstention",
+        "citation_failure"
+      ],
+      "observations": [
+        "Both report numbers were correct.",
+        "The model did not explicitly identify Generative AI.",
+        "The model claimed the supplied evidence did not specify the technology.",
+        "The answer did not cite the supplied source titles."
+      ]
+    }
+  ],
+  "overall_finding": "Providing evidence improved factual accuracy on this question, but did not guarantee answer completeness or correct evidence use.",
+  "limitations": [
+    "Analysis is based on one benchmark question.",
+    "Failure labels were assigned through human review.",
+    "Results do not establish general model performance."
+  ],
+  "created_at": "2026-10-31T17:14:07.591297+00:00"
+}
