@@ -17,19 +17,57 @@ def load_result(path):
 def get_review(data):
     review = data.get("human_review")
 
-    if not review:
+    if not isinstance(review, dict):
         raise ValueError(
             f"Human review missing in {data.get('evaluation_id')}"
+        )
+
+    outer_status = data.get("review_status")
+    inner_status = review.get("review_status")
+
+    if outer_status != "reviewed" and inner_status != "reviewed":
+        raise ValueError(
+            f"Completed human review missing in {data.get('evaluation_id')}"
         )
 
     return review
 
 
-def common_score(review):
-    criteria = ["accuracy", "reasoning"]
+def score_value(review, criterion):
+    value = review.get(criterion)
 
-    earned = sum(review[c]["score"] for c in criteria)
-    maximum = sum(review[c]["max_score"] for c in criteria)
+    if isinstance(value, dict):
+        value = value.get("score")
+
+    if not isinstance(value, int) or isinstance(value, bool):
+        raise ValueError(f"Invalid or missing score: {criterion}")
+
+    return value
+
+
+def criterion_notes(review, criterion):
+    value = review.get(criterion)
+
+    if isinstance(value, dict):
+        return value.get("notes", "No notes provided.")
+
+    return review.get("reviewer_notes", "No notes provided.")
+
+
+def common_score(review):
+    maxima = {"accuracy": 40, "reasoning": 15}
+
+    earned = 0
+
+    for criterion, maximum in maxima.items():
+        score = score_value(review, criterion)
+
+        if not 0 <= score <= maximum:
+            raise ValueError(f"Score out of range: {criterion}")
+
+        earned += score
+
+    maximum = sum(maxima.values())
 
     return earned, maximum, (earned / maximum) * 100
 
@@ -65,8 +103,8 @@ have scores for these criteria.
 
 | Criterion | Closed-book | Evidence-assisted |
 |---|---:|---:|
-| Accuracy | {baseline_review['accuracy']['score']}/{baseline_review['accuracy']['max_score']} | {evidence_review['accuracy']['score']}/{evidence_review['accuracy']['max_score']} |
-| Reasoning | {baseline_review['reasoning']['score']}/{baseline_review['reasoning']['max_score']} | {evidence_review['reasoning']['score']}/{evidence_review['reasoning']['max_score']} |
+| Accuracy | {score_value(baseline_review, 'accuracy')}/{40} | {score_value(evidence_review, 'accuracy')}/{40} |
+| Reasoning | {score_value(baseline_review, 'reasoning')}/{15} | {score_value(evidence_review, 'reasoning')}/{15} |
 | Combined | {baseline_score[0]}/{baseline_score[1]} ({baseline_score[2]:.2f}%) | {evidence_score[0]}/{evidence_score[1]} ({evidence_score[2]:.2f}%) |
 
 ## Difference
@@ -75,8 +113,8 @@ have scores for these criteria.
 
 ## Additional Evidence-assisted Criteria
 
-- Source Quality: {evidence_review['source_quality']['score']}/{evidence_review['source_quality']['max_score']}
-- Evidence Support: {evidence_review['evidence_support']['score']}/{evidence_review['evidence_support']['max_score']}
+- Source Quality: {score_value(evidence_review, 'source_quality')}/{20}
+- Evidence Support: {score_value(evidence_review, 'evidence_support')}/{25}
 
 These criteria are excluded from the direct comparison because
 they were not assessed in the closed-book evaluation.
@@ -85,15 +123,15 @@ they were not assessed in the closed-book evaluation.
 
 ### Closed-book
 
-{baseline_review['accuracy']['notes']}
+{criterion_notes(baseline_review, 'accuracy')}
 
-{baseline_review['reasoning']['notes']}
+{criterion_notes(baseline_review, 'reasoning')}
 
 ### Evidence-assisted
 
-{evidence_review['accuracy']['notes']}
+{criterion_notes(evidence_review, 'accuracy')}
 
-{evidence_review['reasoning']['notes']}
+{criterion_notes(evidence_review, 'reasoning')}
 
 ## Limitations
 

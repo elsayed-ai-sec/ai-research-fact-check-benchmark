@@ -49,4 +49,4 @@ The model identifies the relationship but fails to explicitly extract Generative
 This comparison covers one benchmark question and one model.
 The results are preliminary and do not establish general model performance.
 
-Generated at: 2026-10-31T17:12:06.920344+00:00
+Generated at: 2026-11-01T14:37:43.079927+00:00
